@@ -12,7 +12,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   return (
     <div className="App">
-      <Router>
+      <Router basename="">
         <Navbar state={loggedIn} changeState={setLoggedIn}/>
         <Routes>
           <Route exact path="/" element={<ProductList/>} />
